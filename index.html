@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <div class="bg-container">
+        <h1 class="counter-heading">Counter</h1>
+        <p id="counterValue" class="counter-value">0</p>
+        <div>
+          <button onclick="onDecrement()" class="button">DECREASE</button>
+          <button onclick="onReset()" class="button">RESET</button>
+          <button onclick="onIncrement()" class="button">INCREASE</button>
+        </div>
+        <div class="calculator">
+            <h1 class="counter-heading">Calculator</h1>
+            <div>
+                <input type="number" id="input1" class="input" placeholder="Enter first number">
+                <input type="number" id="input2" class="input" placeholder="Enter second number">
+            </div>
+            <div>
+                <button onclick="onAdd()" class="button">ADD</button>
+                <button onclick="onSubtract()" class="button">SUBTRACT</button>
+                <button onclick="onMultiply()" class="button">MULTIPLY</button>
+                <button onclick="onDivide()" class="button">DIVIDE</button>
+                <button onclick="onPercentage()" class="button">PERCENTAGE</button>
+            </div>
+            <p class="result-value">Result: <span id="result">0</span></p>
+            <button onclick="onClear()" class="button">CLEAR</button>
+      </div>
+    </div>
+</body>
+</html>
